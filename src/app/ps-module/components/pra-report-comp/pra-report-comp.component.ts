@@ -10,15 +10,43 @@ export class PraReportCompComponent implements OnInit {
   constructor() { }
 
   columnDefs = [
-    { headerName: 'Make', field: 'make' },
-    { headerName: 'Model', field: 'model' },
-    { headerName: 'Price', field: 'price' }
+    { headerName: 'EG NUMBER', field: 'EG-NUMBER' },
+    { headerName: 'EG TITLE', field: 'EG-EG-TITLE' },
+    { headerName: 'EXP CODE', field: 'EXP-CODE' },
+    { headerName: 'BANKER NAME', field: 'BANKER-NAME' },
+    { headerName: 'WAARR', field: 'WAARR' },
+    { headerName: 'AUM', field: 'AUM' },
+    { headerName: 'IOS', field: 'IOS' },
+    { headerName: 'RDIP REF CURRENCY', field: 'RDIP-REF-CURRENCY' },
+    { headerName: 'REF CURRENCY', field: 'REF-CURRENCY' },
+
   ];
 
   rowData = [
-    { make: 'Toyota', model: 'Celica', price: 35000 },
-    { make: 'Ford', model: 'Mondeo', price: 32000 },
-    { make: 'Porsche', model: 'Boxter', price: 72000 }
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
+    { 'EG-NUMBER': '002579418-0021', 'EG-EG-TITLE': 'EG Title Come Here', 'EXP-CODE': 2727, 'BANKER-NAME': 'Katz, Juan', 'WAARR':'5.15', 'AUM':'999.999999', 'IOS': '4','RDIP-REF-CURRENCY':'SGD, USD', 'REF-CURRENCY':'USD'},
   ];
 
   ngOnInit() {

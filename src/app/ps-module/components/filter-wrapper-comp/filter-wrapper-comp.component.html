@@ -1,1 +1,46 @@
-<p>filter-wrapper-comp works!</p>
+<div>
+  <ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Product & Services</a></li>
+    <li>DRMR</li>
+  </ul>
+</div>
+<form>
+  <mat-form-field>
+    <mat-label>Please Select Option</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let tool of tools" [value]="tool.value">
+        {{tool.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="pl-4">
+    <mat-label>Please Select Option</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let filter of filters" [value]="filter.value">
+        {{filter.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="pl-4">
+    <input matInput placeholder="Search EG" value="">
+  </mat-form-field>
+
+</form>
+
+<mat-tab-group>
+  <mat-tab label="PRA Report">
+    <div class="pt-5">
+      <app-pra-report-comp></app-pra-report-comp>
+    </div>
+  </mat-tab>
+  <mat-tab label="PRW Report"> Content 2 </mat-tab>
+  <mat-tab label="PRO Report"> Content 3 </mat-tab>
+  <mat-tab label="No-IOS Report"> Content 4 </mat-tab>
+  <mat-tab label="PRE Report"> Content 5 </mat-tab>
+  <mat-tab label="Combined Report"> Content 6 </mat-tab>
+  <mat-tab label="Knowledge Break"> Content 7 </mat-tab>
+  <mat-tab label="Concentration Break"> Content 8 </mat-tab>
+</mat-tab-group>

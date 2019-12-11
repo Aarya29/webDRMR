@@ -11,6 +11,10 @@ import { KnowledgeBreakCompComponent } from './components/knowledge-break-comp/k
 import { ConcentrationBreakCompComponent } from './components/concentration-break-comp/concentration-break-comp.component';
 import { FilterWrapperCompComponent } from './components/filter-wrapper-comp/filter-wrapper-comp.component';
 import { PsHomeCompComponent } from './components/ps-home-comp/ps-home-comp.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -27,10 +31,15 @@ import { PsHomeCompComponent } from './components/ps-home-comp/ps-home-comp.comp
   ],
   imports: [
     CommonModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([]),
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+    MatTabsModule
   ],
   exports: [
-    PsHomeCompComponent
+    PsHomeCompComponent,
+    FilterWrapperCompComponent
   ],
 })
 export class PsModuleModule { }
